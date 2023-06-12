@@ -7,8 +7,8 @@
     <string name="fav_error">Não foi possível favoritar. Tente novamente.</string>
     <string name="disfav_error">Não foi possível desfavoritar. Tente novamente.</string>
 
-    <string name="add_cart">&#x20;&#x20;&#x20;adicionar na sacola&#x20;&#x20;&#x20;</string>
-    <string name="cart_error">Não foi possível adicionar à sacola. Tente novamente.</string>
+    <string name="add_bag">&#x20;&#x20;&#x20;adicionar na sacola&#x20;&#x20;&#x20;</string>
+    <string name="bag_error">Não foi possível adicionar à sacola. Tente novamente.</string>
 
     <string name="close_order">&#x20;&#x20;fechar pedido&#x20;&#x20;</string>
     <string name="closed_order">Pedido Fechado!</string>
@@ -16,7 +16,7 @@
     <string name="new_order">&#x20;&#x20;novo pedido&#x20;&#x20;</string>
 
     <string name="empty_favlist">Não há items favoritados!</string>
-    <string name="empty_cart">Não há items na sacola!</string>
+    <string name="empty_bag">Não há items na sacola!</string>
 
     <string name="item_title">Título do alimento</string>
     <string name="item_desc">Descrição do alimento</string>
@@ -33,7 +33,7 @@
 
     <string name="title_menu">Cardápio</string>
     <string name="title_fav">Favoritos</string>
-    <string name="title_cart">Sacola</string>
+    <string name="title_bag">Sacola</string>
 
     <!-- Descriptions -->
 
@@ -42,17 +42,11 @@
     <string name="logo_letters_desc">Imagem com as letras do logo "Ta ná mão"</string>
     <string name="ic_cutlery_desc">Ícone de uma garfo e uma faca cruzados em branco</string>
     <string name="ic_heart_desc">Ícone de uma coração sem preenchimento com contorno em branco</string>
-    <string name="ic_cart_desc">Ícone de um carrinho de mercado em branco</string>
+    <string name="ic_bag_desc">Ícone de um carrinho de mercado em branco</string>
     <string name="ic_qrcode_desc">Ícone de um qrcode com uma lupa</string>
     <string name="ic_fav_desc">Ícone de coração na cor cinza</string>
     <string name="ic_disfav_desc">ícone de coração sem preenchimento com contorno preto</string>
     <string name="empty_file_desc">Representação de um arquivo de imagem com uma arvore, nuvens e estrelas ao lado</string>
     <string name="empty_image_desc">Representação de um vetor de uma foto em cor cinza claro</string>
-    <string name="title_activity_splash">SplashActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
 </resources>
