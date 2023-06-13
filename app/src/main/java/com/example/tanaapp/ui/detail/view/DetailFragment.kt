@@ -1,17 +1,17 @@
 package com.example.tanaapp.ui.detail.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.tanaapp.R
 import com.example.tanaapp.data.model.MenuItem
 import com.example.tanaapp.databinding.FragmentDetailBinding
 import com.example.tanaapp.ui.detail.viewmodel.DetailViewModel
+import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
 
 class DetailFragment : Fragment() {
@@ -83,7 +83,8 @@ class DetailFragment : Fragment() {
 
     private fun addItemBag(item: MenuItem) {
         viewModel.sendItemToBag(item)
-        Toast.makeText(context, R.string.item_add, Toast.LENGTH_SHORT).show()
+        this.view?.let { Snackbar.make(it, R.string.item_add, Snackbar.LENGTH_SHORT).show() }
+
     }
 
     private fun updateColor(item: MenuItem) {
@@ -113,17 +114,9 @@ class DetailFragment : Fragment() {
 
     private fun favoriteItem(item: MenuItem) {
         if (item.isFavorite) {
-            Toast.makeText(
-                context,
-                "${item.name} ${getString(R.string.item_fav)}",
-                Toast.LENGTH_SHORT
-            ).show()
+            this.view?.let { Snackbar.make(it, "${item.name} ${getString(R.string.item_fav)}", Snackbar.LENGTH_SHORT).show() }
         } else {
-            Toast.makeText(
-                context,
-                "${item.name} ${getString(R.string.item_disfav)}",
-                Toast.LENGTH_SHORT
-            ).show()
+            this.view?.let { Snackbar.make(it,"${item.name} ${getString(R.string.item_disfav)}", Snackbar.LENGTH_SHORT).show() }
         }
     }
 }
